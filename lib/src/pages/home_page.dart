@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_oat/src/pages/current_time_page.dart';
-import 'package:mobile_oat/src/pages/increment_page.dart';
+import 'package:mobile_oat/src/pages/welcome_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
       body: PageView(
         controller: pageController,
         children: const [
-          IncrementPage(),
+          WelcomeScreen(),
           CurrentTime()
         ],
       ),
